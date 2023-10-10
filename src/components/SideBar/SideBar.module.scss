@@ -1,112 +1,110 @@
-.menuIcon{
-    width: 2rem;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 98;
+import .menuIcon {
+  width: 2rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 98;
 }
 
-.menu{
-    z-index: 99;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    flex-direction: column;
-    width: 25rem;
-    height: 100%;
-    padding: 2rem;
-    border-radius: 0 20px 20px 0;
-    background-color: #fff;
-    box-sizing: border-box;
-    justify-content: space-around;
-    transition: all 0.3s;
+.menu {
+  z-index: 99;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  width: 25rem;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 0 20px 20px 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  justify-content: space-around;
+  transition: all 0.3s;
 
-    &_Close{
-        width: 1.4rem;
-        position: absolute;
-        top: 2.2rem;
-        right: 1.8rem;
-    }
-
-    &_List{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: calc(var(--vh, 1vh)* 80);   
-
-        a{
-            cursor: default
-        }
-
-        &_Card{
-            position: relative;
-            display: flex;
-            text-decoration: none;
-            width: 90%;
-            height: 5rem;
-            margin-top: 1rem;
-            background-color: black;
-            padding: 0 1.4rem;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            background-size: cover;
-            overflow: hidden;
-            align-items: center;
-            box-sizing: border-box;
-            transition: all 0.3s;
-
-            &:hover .Cover{
-                left: 0
-            }
-
-            div{
-                z-index: 20;
-            }
-
-            &_Text{
-                color: #fff;
-                display: flex;
-                align-items: center;
-            }
-        }
-    }
-}
-
-.Cover{
+  &_Close {
+    width: 1.4rem;
     position: absolute;
+    top: 2.2rem;
+    right: 1.8rem;
+  }
+
+  &_List {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 5rem;
-    background-color: #737898;
-    top: -1rem;
-    left: -100%;
+    height: calc(var(--vh, 1vh) * 80);
+
+    a {
+      cursor: default;
+    }
+
+    &_Card {
+      position: relative;
+      display: flex;
+      text-decoration: none;
+      width: 90%;
+      height: 5rem;
+      margin-top: 1rem;
+      background-color: black;
+      padding: 0 1.4rem;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      background-size: cover;
+      overflow: hidden;
+      align-items: center;
+      box-sizing: border-box;
+      transition: all 0.3s;
+
+      &:hover .Cover {
+        left: 0;
+      }
+
+      div {
+        z-index: 20;
+      }
+
+      &_Text {
+        color: #fff;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 }
 
-.hide{
-    left: -25rem;
+.Cover {
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  background-color: #737898;
+  top: -1rem;
+  left: -100%;
 }
 
-.show{
-    left: 0;
+.hide {
+  left: -25rem;
 }
 
-.Home{
-    background-position-y: -2.3rem;
-    background-image: url('file:///D:/reactJS/myblog/public/assets/images/HomePage/HomePageCard.png');
+.show {
+  left: 0;
 }
 
-.Contact{
-    background-image: url('file:///D:/reactJS/myblog/public/assets/images/AboutMePage/AboutMePageCard.png');
-}
+// .Home {
+//   background-position-y: -2.3rem;
+//   background-image: url("/src/assets/images/HomePage/HomePageCard.png");
+// }
 
-.SlapKyarun{
-    background-position-y: -1.5rem;
-    background-image: url('file:///D:/reactJS/myblog/public/assets/images/SlapKyarunPage/SlapKyarunCard.png');
-}
+// .Contact {
+//   background-image: url("/src/assets/images/AboutMePage/AboutMePageCard.png");
+// }
 
-.Blog{
-    background-position-y: -1.2rem;
-    background-image: url('file:///D:/reactJS/myblog/public/assets/images/BlogPage/BlogPageCard.png');
-}
+// .SlapKyarun {
+//   background-position-y: -1.5rem;
+//   background-image: url("/src/assets/images/SlapKyarunPage/SlapKyarunCard.png");
+// }
 
-
+// .Blog {
+//   background-position-y: -1.2rem;
+//   background-image: url("/src/assets/images/BlogPage/BlogPageCard.png");
+// }
